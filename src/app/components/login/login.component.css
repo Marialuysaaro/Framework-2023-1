@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    background: #9733ff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background: #fff;
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px 10px rgb(77, 53, 167);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    box-shadow: 3px 3px 10px 5px rgb(203, 191, 248);
+    width: 350px;
+    height: 35px;
+    border-radius: 15px;
+    margin: 20px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input input{
+    width: 280px;
+    height: 25px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+
+i{
+    font-size: 30px;
+    color: rgb(77, 53, 167);
+}
+
+.remember {
+    display: flex;
+    width: 330px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember > div {
+    display: flex;
+    gap: 5px;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+}
+
+h4{
+    font-size: 14px;
+    font-weight: 200;
+    color: #999;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+    margin: 25px;
+    border-radius: 20px;
+    background: #2d0558;
+    box-shadow: 5px 5px 10px  rgb(203, 191, 248);
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover{
+    filter: brightness(200%);
+}
+
+.error {
+    border: 2px solid red;
+    margin-top: 5px;
+    width: 280px;
+    height: 40px;
+    background: rgb(224, 135, 135);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.error i {
+    margin-right: 5px;
+}

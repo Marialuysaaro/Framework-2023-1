@@ -1,0 +1,30 @@
+.container {
+    background:  linear-gradient( violet, #f1d5ef);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+} 
+
+.img {
+    height: 100px;
+    width: 100px;
+}
+
+.calc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calc input {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    outline: none;
+    background: rgba(126, 213, 235, 0.6);
+    font-size: 18px;
+}
