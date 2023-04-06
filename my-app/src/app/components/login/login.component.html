@@ -2,14 +2,22 @@
     <div class="login">
         <h2>Sing In</h2>
 
+        <div *ngIf="isError" class="error">
+            <i class="bx bx-error "></i><span>User or password incorret</span>
+        </div>
+
+        <div *ngIf="isCorrect" class="correct">
+            <i class='bx bx-user-check' ></i><span>User or password correct</span>
+        </div>
+
         <div class="input">
             <i class='bx bx-envelope-open'></i>
-            <input type="text" name="email" id="email" placeholder="E-mail" />
+            <input type="text" name="email" id="email" placeholder="E-mail"  [(ngModel)]="user"/>
         </div>
 
         <div class="input">
             <i class='bx bx-lock-alt' ></i>
-            <input type="text" name="password" id="password" placeholder="Password" />
+            <input type="password" name="password" id="password" placeholder="Password"[(ngModel)]="pwd" />
             <i class='bx bxs-low-vision' ></i>
         </div>
 
@@ -21,8 +29,7 @@
             <h4>Forgot password?</h4>
         </div>
 
-        <button>SING IN</button>
+        <button (click)="login()">SING IN</button>
         <h3>Don't have an account? Create</h3>
     </div>
 </div>
-

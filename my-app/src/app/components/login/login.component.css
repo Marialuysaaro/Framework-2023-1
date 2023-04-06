@@ -79,5 +79,35 @@ button {
     background: #c49bf0;
     box-shadow: 5px 5px 10px  rgb(203, 191, 248);
     border: 0;
+    cursor: pointer;
 }
 
+button:hover{
+    filter: brightness(200%);
+}
+
+.error {
+    border: 2px solid red;
+    margin-top: 5px;
+    width: 280px;
+    height: 40px;
+    background: rgb(245, 148, 148);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.error i {
+    margin-right: 5px;
+}
+
+.correct{
+    border: 2px solid rgb(54, 221, 21);
+    margin-top: 5px;
+    width: 280px;
+    height: 40px;
+    background: rgb(165, 233, 168);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
