@@ -1,43 +1,99 @@
+:root {
+    --bg-menu: #e2e9ef;
+    --shadow: #696969;
+}
+
 .container {
-    margin: 0 auto;
-    width: 80%;
+    margin: 20px;
+    width: 90%;
     height: 100vh;
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 200px 1fr 350px;
+    box-shadow: 3px 3px 15px #696969;
+    border-radius: 10px;
+   
 }
 
-.content {
-    background: #fafafd;
-    border: 1px solid red;
-}
-
-.user-info{
+.user-info {
     display: grid;
-    grid-template-rows: 150px 200px 1fr;
+    grid-template-rows: 150px 1fr;
 }
 
-.profile{
-    background: rgb(134, 228, 146);
-
+.profile {
+    /* background: #a5a5eb; */
     display: grid;
     grid-template-rows: auto auto;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
     justify-items: center;
 }
 
 .profile .img {
     width: 80px;
     height: 80px;
-    background: black;
-    border-radius: 50px;
+    background: #f1eca9;
+    border-radius: 50%;
 }
 
-.member{
-    background: pink ;
+.user-info .menu li{
+    list-style: none;
+    padding: 15px 20px;
+    
+}
+.user-info .menu li i{
+   color:  #696969;
+   font-size: 15px;
+   margin-right: 15px;
 }
 
-.menu{
-    background: rgb(205, 90, 205);
+.user-info .menu li a{
+   color:  #696969;
+   font-size: 15px;
+   text-decoration: none;
+}
 
+.content {
+    display: grid;
+    grid-template-rows: 100px 200px 1fr;
+}
+
+.content .search {
+    display: grid;
+    grid-template-columns: 150px auto;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .search .input {
+    background: #f1f8ff;
+    display: flex;
+    height: 30px;
+    width: 220px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.content .search .input .input{
+    background:  transparent;
+    border: none;
+    margin-left: 15px;
+    height: 30px;
+    width: 160px;
+    outline: pointer;
+}
+
+.content .search .input .icon {
+    height: 100%;
+    color: #fff;
+    background: #6555e2;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+}
+
+.user, .user-info{
+    background: #f7f8fa;
 }
