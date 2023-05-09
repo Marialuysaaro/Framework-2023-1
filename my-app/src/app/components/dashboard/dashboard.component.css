@@ -4,7 +4,7 @@
 }
 
 .container {
-    margin: 20px;
+    margin: 20px auto;
     width: 90%;
     height: 100vh;
     display: grid;
@@ -52,48 +52,107 @@
    text-decoration: none;
 }
 
+.user, .user-info{
+    background: #f7f8fa;
+    margin: 5px;
+}
+
 .content {
     display: grid;
     grid-template-rows: 100px 200px 1fr;
+    padding: 40px;
 }
 
 .content .search {
     display: grid;
     grid-template-columns: 150px auto;
-    padding: 40px;
     justify-content: space-between;
     align-items: center;
+  
 }
 
 .content .search .input {
     background: #f1f8ff;
     display: flex;
-    height: 30px;
-    width: 220px;
+    height: 40px;
+    width: 300px;
     align-items: center;
     justify-content: space-between;
     border-radius: 5px;
 }
 
-.content .search .input .input{
-    background:  transparent;
+.content .search .input input{
+    background: transparent;
     border: none;
     margin-left: 15px;
     height: 30px;
     width: 160px;
-    outline: pointer;
+    outline: none;
 }
 
-.content .search .input .icon {
-    height: 100%;
-    color: #fff;
+.content .search .input .icon{
     background: #6555e2;
+    color: #fff;
+    font-size: 24px;
+    width: 50px;
+    height: 38px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     cursor: pointer;
 }
+.content .info {
+    display: grid;
+    grid-template-columns: 2.7fr 1.3fr;
+    gap: 30px;
+}
+.content .info .box1 {
+    background: #fadbbd;
+}
+.content .info .box2 {
+    background: #f0ecfe;
+}
 
-.user, .user-info{
-    background: #f7f8fa;
+.content .adm{
+    display: grid;
+    grid-template-columns: 1.4fr 1.1fr;
+    gap: 30px; 
+    margin-top: 30px;
+}
+
+.content .adm .team{
+    background: #f1a9db;
+}
+.content .adm .task{
+    background: #cfbdfa;
+}
+
+.content .adm .team .title{
+    background: #e5f7f0;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.content .adm .team .title span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.content .adm .team .title .ball{
+    background: #43af74;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px 0 25px;
+}
+
+.content .adm .team .title .ball i{
+    color: #fff;
+    font-size: 22px;
 }
