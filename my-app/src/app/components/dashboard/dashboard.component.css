@@ -11,7 +11,6 @@
     grid-template-columns: 200px 1fr 350px;
     box-shadow: 3px 3px 15px #696969;
     border-radius: 10px;
-   
 }
 
 .user-info {
@@ -68,7 +67,6 @@
     grid-template-columns: 150px auto;
     justify-content: space-between;
     align-items: center;
-  
 }
 
 .content .search .input {
@@ -155,4 +153,43 @@
 .content .adm .team .title .ball i{
     color: #fff;
     font-size: 22px;
+}
+
+.container .user{
+    display: grid;
+    grid-template-rows: 100px 180px 120px 1fr;
+    gap: 10px;
+}
+
+.container .user .box-1 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.container .user .box-1 i {
+    font-size: 25px;
+    margin: 0 10px;
+    color: #696969;
+}
+
+.container .user .box-2 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .user .box-2 .img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.container .user .box-3 {
+    background: #c0b53b;
+}
+
+.container .user .box-4 {
+    background: #137a34;
 }
