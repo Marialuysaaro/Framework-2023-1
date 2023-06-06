@@ -4,34 +4,38 @@
     --bg-menu: #e2e9ef;
     --shadow: #696969;
 }
-
 a{
-    font-size: 14px;
+    font-size: 12px;
     color: #6957f8;
 }
-
-h3{
+h3 {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 540;
 }
-
 h5{
     font-size: 12px;
+    font-weight: 500;
 }
 
-*{
+h4 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
 }
+
 
 .container {
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 200px 1fr 380px;
-
+   
 }
 
 .user-info {
@@ -80,7 +84,7 @@ h5{
 .content {
     display: grid;
     grid-template-rows: 100px 200px 1fr;
-    padding: 40px;
+    padding: 0 20px;
 }
 
 .content .search {
@@ -88,6 +92,7 @@ h5{
     grid-template-columns: 150px auto;
     justify-content: space-between;
     align-items: center;
+  
 }
 
 .content .search .input {
@@ -140,22 +145,52 @@ h5{
     margin-top: 30px;
 }
 
-.content .adm .team{
-    background: #f1a9db;
-}
+
 .content .adm .task{
     background: #cfbdfa;
 }
+
+
+
+.content .adm .task .title{
+    background: #e5f7f0;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-left: 2px solid #43af74;
+}
+
+.content .adm .task .title span{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.content .adm .task .title .ball{
+    background: #43af74;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px 0 25px;
+}
+
+.content .adm .task .title .ball i{
+    color: #fff;
+    font-size: 22px;
+}
+
 
 .content .adm .team .title{
     background: #e5f7f0;
     display: flex;
     align-items: center;
     height: 50px;
-    border-radius: 5px;
+    border-left: 2px solid #43af74;
 }
 
-.content .adm .team .title span {
+.content .adm .team .title span{
     font-size: 18px;
     font-weight: 600;
 }
@@ -164,7 +199,7 @@ h5{
     background: #43af74;
     width: 30px;
     height: 30px;
-    border-radius: 50%; 
+    border-radius: 50%;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,92 +213,89 @@ h5{
 
 .container .user{
     display: grid;
-    grid-template-rows: 70px 180px 120px 1fr;
+    grid-template-rows: 70px 180px 120px  1fr;
     padding: 0 25px;
 }
 
-.container .user .box-1 {
+.container .user .box-1{
     display: flex;
     justify-content: end;
     align-items: center;
-    padding-right: 5px;
+    padding-right: 28px;
 }
 
-.container .user .box-1 i {
-    font-size: 25px;
+.container .user .box-1 i{
     margin: 0 10px;
+    font-size: 23px;
     color: #696969;
 }
 
 .container .user .box-2 {
+    justify-content: center;
     display: flex;
-    justify-content: end;
     align-items: center;
     flex-direction: column;
 }
 
-.container .user .box-2 .img{
-    width: 100px;
+.container .user .box-2 .ball .img{
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    margin-bottom: 10px;
 }
 
-.container .user .box-2  h5{
+.container .user .box-2 h5{
     color: #6957f8;
 }
 
-.container .user .box-3 {
+.container .user .box-3{
     display: grid;
     place-items: center;
     margin-bottom: 30px;
 }
 
-.container .user .box-3 .box {
+.container .user .box-3 .box{ 
     width: 100%;
     height: 80px;
     background: #f0edff;
     border-radius: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
 
-.container .user .box-3 .box .ball{
-    height: 40px;
-    width: 40px;
+.container .user .box-3 .box .ball {
+    height: 50px;
+    width: 50px;
     background: #fff;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    color: #6555e2;
-    margin-right: 5px;
+    display: grid;
+    place-items: center;
 }
 
-.container .user .box-3 .box .ball i{
+.container .user .box-3 .box .ball i {
     font-size: 24px;
     color: #6555e2;
 }
 
-.container .user .box-3 .box .item-1 {
-    border-right:  2px solid #6555e2;
+.container .user .box-3 .box .item-1{
+    border-right: 2px solid #6555e2;
 }
 
 .container .user .box-3 .box .item-1 {
     color: #6957f8;
 }
 
-.container .user .box-3 .box .item-2,  .container .user .box-3 .box .item-2 i{
+.container .user .box-3 .box .item-2, .container .user .box-3 .box .item-2 i {
     color: #f47c4e;
 }
 
-
-.container .user .box-3 .box .item-1, .container .user .box-3 .box .item-2{
-    display:flex;
+.container .user .box-3 .box .item-1, .container .user .box-3 .box .item-2 {
+    display: flex;
     align-items: center;
-    gap:10px;
     justify-content: center;
+    gap: 10px;
 }
+
 
 .container .user .box-4 .user-title{
     display: flex;
@@ -283,22 +315,21 @@ h5{
     margin-bottom: 15px;
     height: 40px;
 }
-
 .container .user .box-4 .task-list .number{
     width: 50px;
     height: 50px;
-    background: #ffffff2f;
+    background: #ffffff2c;
+    border-radius: 8px;
     display: grid;
     place-items: center;
-    font-size: 18px;
-    border-radius: 8px;
 }
+
 
 .container .user .box-4 .task-list:nth-child(3){
-    background: #6758f8;
+    background: #6555e2;
 }
 
-.container .user .box-4 .recent-task {
+.container .user .box-4 .recent-task{
     display: flex;
     justify-content: space-between;
     padding: 15px;
@@ -314,11 +345,67 @@ h5{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: green;
+    background: #43af74;
 }
+
 
 .container .user .box-4 .recent-task .time{
     font-size: 12px;
-    color: #6758f8;
+    color: #6957f8;
     font-weight: 200;
 }
+
+
+
+.container .adm .team .box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background: #f8fafd;
+    margin: 10px 0 ;
+    border-radius: 8px;
+}
+
+.container .adm .team .box .member {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 0 15px 0 25px;
+    align-items: center;
+    padding: 15px;
+}
+
+.container .adm .team .box .member img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.container .adm .team .detail-at .member img{
+    width: 35px;
+    height: 35px;
+    border-radius: 30%;
+    margin-right: 15px;
+} 
+
+.container .adm .team .detail-at .member .data{
+    margin-top: 10px;
+}
+
+.container .adm .team .detail-at .member {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 0 15px 0 25px;
+    align-items: center;
+    padding: 15px;
+    background: #f8fafd;
+
+}
+
+.container .adm .team .detail-at {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+

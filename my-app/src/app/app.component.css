@@ -1,30 +1,30 @@
-.container {
-    background:  linear-gradient( violet, #f1d5ef);
+.container{
+    background: linear-gradient(45deg, #eeeeef, #7b8ad8, #e589d6);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-
-} 
-
-.img {
-    height: 100px;
-    width: 100px;
 }
 
-.calc {
+.img{
+    height: 250px;
+    width: 200px; 
+}
+  
+
+.calc{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .calc input {
-    width: 25px;
-    height: 25px;
-    margin: 10px;
+    width: 30px;
+    height: 30px;
+    margin: 8px;
     outline: none;
-    background: rgba(126, 213, 235, 0.6);
+    background: #705690;
     font-size: 18px;
+
 }

@@ -1,0 +1,81 @@
+.container {
+    background: #a569e6;
+    border: 3px solid #a352fa;
+    margin: 20px auto;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px #a352fa46;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.foto1 img{
+
+    height: 180px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #00000063;
+
+}
+
+.foto2 img{
+    height: 220px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #00000063;
+}
+
+.foto3 img{
+    height: 180px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #00000063;
+}
+
+.foto4 img{
+    height: 190px;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #00000063;
+}
+
+.foto5 img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #00000063;
+}
+
+.foto6 img{
+    height: 200px;
+    width: 240px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #00000063;
+}
+
+.foto7 img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #00000063;
+}
+
+.foto8 img{
+    height: 200px;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #00000063;
+}
+
+.foto9 img{
+    height: 200px;
+    width: 290px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #00000063;
+}

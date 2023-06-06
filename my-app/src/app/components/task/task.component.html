@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="task">
+        <div class="itens">
+            <h4>Task Information</h4>
+            <label for="txtNome">Task</label>
+            <input
+            type="text"
+            name="txtNome"
+            id="txtNome"
+            placeholder="Digite o nome da tarefa"
+            [formControl]="task"
+            />
+            <label for="txtDesc">Descricão</label>
+            <input
+            type="text"
+            name="txtDesc"
+            id="txtDesc"
+            placeholder="Digite o nome da tarefa"
+            [formControl]="descricao"
+            />
+            <label for="txtResp">Responsável</label>
+            <input
+            type="text"
+            name="txtResp"
+            id="txtResp"
+            placeholder="Digite o nome da tarefa"
+            [formControl]="responsavel"
+            />
+            <label for="txtInicio">Data Inicio</label>
+            <input
+            type="date"
+            name="txtInicio"
+            id="txtInicio"
+            placeholder="Digite o nome da tarefa"
+            [formControl]="dt_inicio"
+            />
+            <label for="txtFim">Data Término</label>
+            <input 
+            type="date" 
+            name="txtFim" 
+            id="txtFim"  
+            [formControl]="dt_fim"
+            />
+            
+        <div class="button">
+            <button>To send</button>
+        </div>
+    </div>
+</div>
