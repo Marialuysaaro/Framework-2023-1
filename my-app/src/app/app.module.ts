@@ -14,6 +14,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TaskComponent } from './components/task/task.component';
 import { UserComponent } from './components/user/user.component';
+import { TaskService } from './components/task.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { UserComponent } from './components/user/user.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [TaskService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
